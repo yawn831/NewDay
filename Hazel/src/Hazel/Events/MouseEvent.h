@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Hazel {
 
 	class HAZEL_API MouseMoveEvent : public Event
@@ -74,7 +72,7 @@ namespace Hazel {
 		std::string ToString() const override
 		{
 			std::stringstream ss;
-			ss << "MouseButtonPressedEvent£º " << m_Button;
+			ss << "MouseButtonPressedEventï¼š " << m_Button;
 		}
 
 		EVENT_CLASS_TYPE(MouseButtonPressed);
@@ -89,7 +87,7 @@ namespace Hazel {
 		std::string ToString() const override
 		{
 			std::stringstream ss;
-			ss << "MouseButtonReleasedEvent£º " << m_Button;
+			ss << "MouseButtonReleasedEventï¼š " << m_Button;
 		}
 
 		EVENT_CLASS_TYPE(MouseButtonReleased);
